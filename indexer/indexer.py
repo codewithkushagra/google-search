@@ -35,7 +35,7 @@ class Indexer:
             for word, count in word_counts.items():
                 indices = [i for i, w in filtered_words if w == word]
                 print(f"{word}: {count} (indices: {indices})")
-                index_data.append({'word': word,'count': count,'indices': indices})
+                index_data.append({'wordID': word,'count': count,'indices': indices})
             
             title = data['title']
             
